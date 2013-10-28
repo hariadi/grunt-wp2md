@@ -66,7 +66,6 @@ module.exports = function(grunt) {
             postContent = item['content:encoded'][0],
             postComment = item['wp:comment_status'][0] === 'open' ? true : false;
 
-        console.log(postTitle);
         if (_.isObject(postTitle)) {
           postTitle = '';
         }
@@ -149,8 +148,8 @@ module.exports = function(grunt) {
         next(null, length);
       });
 
-      grunt.log.writeln('Done converting to "' + f.dest);
-
+      grunt.log.writeln('>>'.green + ' Done converting to ' + f.dest.cyan);
+      next();
     });
   });
 };
