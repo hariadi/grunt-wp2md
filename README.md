@@ -1,4 +1,4 @@
-# grunt-wp2md [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md) 
+# grunt-wp2md [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md)  [![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.png)](https://travis-ci.org/hariadi/grunt-wp2md)
 
 > Convert WordPress XML to static Markdown files.
 
@@ -76,7 +76,7 @@ grunt.initConfig({
     },
   }
 });
-
+```
 
 
 ## Author
@@ -88,8 +88,8 @@ grunt.initConfig({
 
 ## Release History
 
-_(Nothing yet)_
-
+ * 2013-07-28   v0.1.1   Documentation tweaks. Add Travis.
+ * 2013-10-27   v0.1.0   Initial
 
 ## License
 Copyright (c) 2013 Hariadi Hinta, contributors.
