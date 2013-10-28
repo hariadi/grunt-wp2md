@@ -1,6 +1,6 @@
 # grunt-wp2md [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md) 
 
-> Export WordPress XML to static Markdown files.
+> Convert WordPress XML to static Markdown files.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
