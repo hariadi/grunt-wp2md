@@ -28,7 +28,10 @@ module.exports = function(grunt) {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      format: 'yyyy-mm-dd'
+      format: 'yyyy-mm-dd',
+      posts: '_posts',
+      drafts: '_drafts',
+      pages: ''
     });
 
     // Iterate over all specified file groups.
@@ -49,7 +52,7 @@ module.exports = function(grunt) {
 
       var source;
       parser.parseString(src, function (err, result) {
-        grunt.log.writeln('>> Parsing XML: ' + f.src[0].cyan);
+        grunt.verbose.writeln('>> Parsing XML: ' + f.src[0].cyan);
         source = result;
       });
 
@@ -60,7 +63,7 @@ module.exports = function(grunt) {
 
       async.forEach(arr, function(item, next){
         var postTitle   = item.title[0],
-            postId          = item['wp:post_id'][0],
+            postId      = item['wp:post_id'][0],
             postDate    = item['wp:post_date'][0],
             postName    = item['wp:post_name'][0],
             postContent = item['content:encoded'][0],
@@ -81,7 +84,7 @@ module.exports = function(grunt) {
           case 'post':
             length++;
 
-            var postStatus = item['wp:status'][0] === 'publish' ? '_posts/' : '_drafts/',
+            var postStatus = item['wp:status'][0] === 'publish' ? options.posts : options.drafts,
               cats = item.category,
               categories = [],
               postTag = [];
@@ -118,8 +121,8 @@ module.exports = function(grunt) {
 
             filename = (options.format && postDate) ? grunt.template.date(postDate, options.format) + '-' + postName : postName;
 
-            grunt.file.write(f.dest  + postStatus + filename + 
-              '.md', content.join('\n') + 
+            grunt.file.write(path.join(f.dest, postStatus, filename + 
+              '.md'), content.join('\n') + 
               '\n\n' + postContent);
             next();
             break;
@@ -134,7 +137,7 @@ module.exports = function(grunt) {
               '---'
             ];
 
-            grunt.file.write(f.dest + postName + '/index.md', content.join('\n') + 
+            grunt.file.write(path.join(f.dest, options.pages, postName + '/index.md'), content.join('\n') + 
               '\n\n' + postContent);
             next();
             break;
