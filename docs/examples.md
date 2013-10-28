@@ -1,3 +1,9 @@
+## WordPress XML
+
+Export your content in "Tools" → "Export" → "WordPress" in your WordPress dashboard and put XML file to /path/to/wordpress.xml
+
+![wpxml](https://f.cloud.github.com/assets/376635/1417781/bb434810-3f9d-11e3-8d0d-4e54ff5a2717.jpg)
+
 ## Default
 
 To simplify might do something like:
@@ -7,7 +13,7 @@ grunt.initConfig({
   wp2md: {
     default_options: {
       files: {
-        'path/to/': ['wordpress.xml'],
+        'path/to/': ['/path/to/wordpress.xml'],
       },
     },
   }
@@ -30,3 +36,6 @@ grunt.initConfig({
   }
 });
 ```
+
+### Output 
+![wp2md-output](https://f.cloud.github.com/assets/376635/1417782/cf624580-3f9d-11e3-9321-6bbd5527554f.jpg)
