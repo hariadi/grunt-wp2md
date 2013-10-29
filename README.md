@@ -115,6 +115,7 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2013-07-29   v0.1.2   Add destination options to posts, drafts and pages.
  * 2013-07-28   v0.1.1   Documentation tweaks. Add Travis.
  * 2013-10-27   v0.1.0   Initial
 
