@@ -92,7 +92,10 @@ grunt.initConfig({
   wp2md: {
     custom_options: {
       options: {
-        format: ''
+        format: '',
+        posts: 'src/_posts',
+        drafts: 'src/_drafts',
+        pages: 'src/pages'
       },
       files: {
         'tmp/custom_options/': ['test/fixtures/*.xml'],

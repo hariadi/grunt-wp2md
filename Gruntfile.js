@@ -39,7 +39,10 @@ module.exports = function(grunt) {
       },
       custom_options: {
         options: {
-          format: ''
+          format: '',
+          posts: 'src/_posts',
+          drafts: 'src/_drafts',
+          pages: 'src/pages'
         },
         files: {
           'tmp/custom_options/': ['test/fixtures/*.xml']
