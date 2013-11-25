@@ -124,7 +124,6 @@ module.exports = function(grunt) {
             grunt.file.write(path.join(f.dest, postStatus, filename + 
               '.md'), content.join('\n') + 
               '\n\n' + postContent);
-            next();
             break;
 
           case 'page':
@@ -139,7 +138,6 @@ module.exports = function(grunt) {
 
             grunt.file.write(path.join(f.dest, options.pages, postName + '/index.md'), content.join('\n') + 
               '\n\n' + postContent);
-            next();
             break;
 
           default:
