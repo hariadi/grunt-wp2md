@@ -14,8 +14,8 @@ module.exports = function(grunt) {
       path = require('path'),
       xml2js = require('xml2js'),
       parser = new xml2js.Parser(),
-      _ = grunt.util._,
-      async = grunt.util.async,
+      _ = require('lodash'),
+      async = require('async'),
       tomd = require('to-markdown').toMarkdown,
       EOL = require('os').EOL,
       EOLre = new RegExp(EOL, 'g');
@@ -124,7 +124,6 @@ module.exports = function(grunt) {
             grunt.file.write(path.join(f.dest, postStatus, filename + 
               '.md'), content.join('\n') + 
               '\n\n' + postContent);
-            next();
             break;
 
           case 'page':
@@ -139,13 +138,11 @@ module.exports = function(grunt) {
 
             grunt.file.write(path.join(f.dest, options.pages, postName + '/index.md'), content.join('\n') + 
               '\n\n' + postContent);
-            next();
             break;
 
           default:
             next();
         }
-        next();
       }, function(err){
         if (err) {throw err;}
         next(null, length);
