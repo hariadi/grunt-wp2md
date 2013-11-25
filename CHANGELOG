@@ -1,3 +1,9 @@
+v0.1.3:
+  date: 2013-11-25
+  changes:
+    - Use external library for async and lodash for great performance.
+    - Upgrade Grunt 0.4.2
+
 v0.1.2:
   date: 2013-07-29
   changes:
