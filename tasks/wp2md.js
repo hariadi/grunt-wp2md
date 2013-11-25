@@ -14,8 +14,8 @@ module.exports = function(grunt) {
       path = require('path'),
       xml2js = require('xml2js'),
       parser = new xml2js.Parser(),
-      _ = grunt.util._,
-      async = grunt.util.async,
+      _ = require('lodash'),
+      async = require('async'),
       tomd = require('to-markdown').toMarkdown,
       EOL = require('os').EOL,
       EOLre = new RegExp(EOL, 'g');
@@ -143,7 +143,6 @@ module.exports = function(grunt) {
           default:
             next();
         }
-        next();
       }, function(err){
         if (err) {throw err;}
         next(null, length);
