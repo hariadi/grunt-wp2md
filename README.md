@@ -1,4 +1,4 @@
-# grunt-wp2md [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md)  [![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.png)](https://travis-ci.org/hariadi/grunt-wp2md)
+# grunt-wp2md [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md)  [![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.png)](https://travis-ci.org/hariadi/grunt-wp2md) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > Convert WordPress XML to static Markdown files.
 
