@@ -16,10 +16,8 @@ module.exports = function(grunt) {
       parser = new xml2js.Parser(),
       _ = require('lodash'),
       async = require('async'),
-      tomd = require('to-markdown').toMarkdown,
-      EOL = require('os').EOL,
-      EOLre = new RegExp(EOL, 'g');
-  
+      tomd = require('to-markdown').toMarkdown;
+
   // Please see the Grunt documentation for more information regarding task
   // creation: http://gruntjs.com/creating-tasks
   grunt.registerMultiTask('wp2md', 'Convert WordPress XML to static Markdown files.', function() {
@@ -57,7 +55,7 @@ module.exports = function(grunt) {
       });
 
       var content,
-          filename, 
+          filename,
           length = 0,
           arr = source.rss.channel[0].item;
 
@@ -72,7 +70,7 @@ module.exports = function(grunt) {
         if (_.isObject(postTitle)) {
           postTitle = '';
         }
-        // Get postTitle if postName blank. Otherwise use postId 
+        // Get postTitle if postName blank. Otherwise use postId
         if (!postName || _.isObject(postName)) {
           postName = postTitle ? grunt.util._.str.slugify(postTitle) : postId;
         }
@@ -121,8 +119,8 @@ module.exports = function(grunt) {
 
             filename = (options.format && postDate) ? grunt.template.date(postDate, options.format) + '-' + postName : postName;
 
-            grunt.file.write(path.join(f.dest, postStatus, filename + 
-              '.md'), content.join('\n') + 
+            grunt.file.write(path.join(f.dest, postStatus, filename +
+              '.md'), content.join('\n') +
               '\n\n' + postContent);
             break;
 
@@ -136,7 +134,7 @@ module.exports = function(grunt) {
               '---'
             ];
 
-            grunt.file.write(path.join(f.dest, options.pages, postName + '/index.md'), content.join('\n') + 
+            grunt.file.write(path.join(f.dest, options.pages, postName + '/index.md'), content.join('\n') +
               '\n\n' + postContent);
             break;
 
