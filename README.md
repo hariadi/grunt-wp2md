@@ -1,6 +1,6 @@
 # grunt-wp2md
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hariadi/grunt-wp2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md)  [![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.png)](https://travis-ci.org/hariadi/grunt-wp2md) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Dependency Status](https://david-dm.org/hariadi/grunt-wp2md.png)](https://david-dm.org/hariadi/grunt-wp2md)
+[![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.svg)](https://travis-ci.org/hariadi/grunt-wp2md)
 
 > Convert WordPress XML to static Markdown files.
 
@@ -36,7 +36,6 @@ grunt.initConfig({
 ```
 
 
-
 ## Options
 ### format
 Type: `String`  
@@ -61,7 +60,6 @@ Type: `String`
 Default value: `''`
 
 Pages destination folder
-
 
 ## Usage Examples
 ### WordPress XML
@@ -109,7 +107,6 @@ grunt.initConfig({
 #### Output 
 ![wp2md-output](https://f.cloud.github.com/assets/376635/1417782/cf624580-3f9d-11e3-9321-6bbd5527554f.jpg)
 
-
 ## Author
 
 **Hariadi Hinta**
@@ -117,13 +114,14 @@ grunt.initConfig({
 + [github.com/hariadi](https://github.com/hariadi)
 + [twitter.com/hariadi](http://twitter.com/hariadi)
 
-## Release History
-
- * 2013-11-25   v0.1.3   Use external library for async and lodash for great performance. Upgrade Grunt 0.4.2
- * 2013-07-29   v0.1.2   Add destination options to posts, drafts and pages.
- * 2013-07-28   v0.1.1   Documentation tweaks. Add Travis.
- * 2013-10-27   v0.1.0   Initial
+## Release history
+**DATE**       **VERSION**   **CHANGES**                                                             
+* 2013-11-25   v0.1.3        Use external library for async and lodash for great performance.,Upgrade
+                             Grunt 0.4.2                                                             
+* 2013-07-29   v0.1.2        Add destination options to posts, drafts and pages.                     
+* 2013-07-28   v0.1.1        Documentation tweaks.,Add Travis.                                       
+* 2013-10-27   v0.1.0        Initial                                                                 
 
 ## License
-Copyright (c) 2013 Hariadi Hinta, contributors.
+Copyright (c) 2014 Hariadi Hinta, contributors.  
 Released under the MIT license
