@@ -1,6 +1,6 @@
 # grunt-wp2md
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hariadi/grunt-wp2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![NPM version](https://badge.fury.io/js/grunt-wp2md.png)](http://badge.fury.io/js/grunt-wp2md)  [![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.png)](https://travis-ci.org/hariadi/grunt-wp2md) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Dependency Status](https://david-dm.org/hariadi/grunt-wp2md.png)](https://david-dm.org/hariadi/grunt-wp2md)
+[![Build Status](https://travis-ci.org/hariadi/grunt-wp2md.svg)](https://travis-ci.org/hariadi/grunt-wp2md)
 
 > Convert WordPress XML to static Markdown files.
 

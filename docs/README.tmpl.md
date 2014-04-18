@@ -3,7 +3,7 @@ username: hariadi
 ---
 # {%= name %}
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hariadi/grunt-wp2md/trend.png)](https://bitdeli.com/free "Bitdeli Badge") [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %}) {% if (travis) { %} [![Build Status]({%= travis %}.png)]({%= travis %}){% } %} [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Dependency Status](https://david-dm.org/hariadi/grunt-wp2md.png)](https://david-dm.org/hariadi/grunt-wp2md)
+[![Build Status]({%= travis %}.svg)]({%= travis %})
 
 > {%= description %}
 
