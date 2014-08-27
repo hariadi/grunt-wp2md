@@ -2,7 +2,7 @@
  * grunt-wp2md
  * https://github.com/hariadi/grunt-wp2md
  *
- * Copyright (c) 2013 Hariadi Hinta
+ * Copyright (c) 2014 Hariadi Hinta
  * Licensed under the MIT license.
  */
 
